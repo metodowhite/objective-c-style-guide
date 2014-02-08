@@ -670,11 +670,11 @@ self.productsRequest = [[SKProductsRequest alloc]
 
 ## Smiley Face
 
-Smiley faces are a very prominent style feature of the metodowhite.com site!  It is very important to have the correct smile signifying the immense amount of happiness and excitement for the coding topic.  The end square bracket is used because it represents the largest smile able to be captured using ascii art.  A half-hearted smile is represented if an end parenthesis is used, and thus not preferred.
+Smiley faces are a very prominent style feature of the metodowhite.com site!  It is very important to have the correct smile signifying the immense amount of happiness and excitement for the coding topic. Emojis allowed.
 
 **Preferred:**
 ```objc
-:]
+:-) 😄
 ```
 
 **Not Preferred:**
