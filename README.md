@@ -45,6 +45,8 @@ UIColor *myColor = [UIColor whiteColor];
 **Not Preferred:**
 ```objc
 UIColor *myColour = [UIColor whiteColor];
+UIColor *elColor = [UIColor whiteColor];
+UIColor *elColoricoMono = [UIColor whiteColor];
 ```
 
 
@@ -324,14 +326,14 @@ NSNumber *buildingStreetNumber = [NSNumber numberWithInteger:10018];
 
 ## Constants
 
-Constants are preferred over in-line string literals or numbers, as they allow for easy reproduction of commonly used variables and can be quickly changed without the need for find and replace. Constants should be declared as `static` constants and not `#define`s unless explicitly being used as a macro.
+Constants are preferred over in-line string literals or numbers, as they allow for easy reproduction of commonly used variables and can be quickly changed without the need for find and replace. Constants should be declared as `static` constants and not `#define`s unless explicitly being used as a macro. Prepend with a lowercase `k`"
 
 **Preferred:**
 
 ```objc
-static NSString * const MWTAboutViewControllerCompanyName = @"metodowhite.com";
+static NSString * const kMWTAboutViewControllerCompanyName = @"metodowhite.com";
 
-static CGFloat const MWTImageThumbnailHeight = 50.0;
+static CGFloat const kMWTImageThumbnailHeight = 50.0;
 ```
 
 **Not Preferred:**
