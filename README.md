@@ -641,15 +641,13 @@ Some of Apple’s APIs write garbage values to the error parameter (if non-NULL)
 
 Singleton objects should use a thread-safe pattern for creating their shared instance.
 ```objc
-+ (instancetype)sharedInstance {
-  static id sharedInstance = nil;
-
-  static dispatch_once_t onceToken;
-  dispatch_once(&onceToken, ^{
-    sharedInstance = [[self alloc] init];
-  });
-
-  return sharedInstance;
++ (instancetype)shared {
+    static id shared;
+    static dispatch_once_t token;
+    dispatch_once(&token, ^{
+        shared = [[self alloc] init];
+    });
+    return shared;
 }
 ```
 This will prevent [possible and sometimes prolific crashes](http://cocoasamurai.blogspot.com/2011/04/singletons-your-doing-them-wrong.html).
